@@ -18,11 +18,11 @@ class DatabaseSeeder extends Seeder
     {
     
         User::factory()->create([
-            'name'=>'Yasu Oka'
+            // 'name'=>'Yasu Oka'
         ]);
 
         Post::factory(5)->create([
-            'user_id'=>1,
+            // 'user_id'=>1,
         ]);
     
     }
