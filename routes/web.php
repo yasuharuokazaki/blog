@@ -23,6 +23,7 @@ Route::get('/', function () {
     return view('posts',[
         
         'posts'=>Post::latest()->with('category','author')->get(),
+        'categories'=>Category::all()
         
     ]);
     // return Post::find('my-first-post');
